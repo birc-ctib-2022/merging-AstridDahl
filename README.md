@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8468032&assignment_repo_type=AssignmentRepo)
 # Merging
 
 Your task in this exercise is to implement a merge of two sorted lists. We will assume that they are integers, but they could be lists of any type that we can put an order on. If we have lists `x` and `y` we want another list, `z`, such that `z = sorted(x + y)`. Don't use that code for it, though. For reasons that we get to next week, concatenating two lists and then sorting them is generally slower than merging them. (Generally, it depends on other things as well, and you might find that your merge implementation is slower than the code above; there are other reasons for that, however, that we can talk about at the exercises).

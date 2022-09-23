@@ -28,18 +28,6 @@ def merge(x: list[int], y: list[int]) -> list[int]:
             z.append(y_s[j])
             j += 1
         
-    #    break  # FIXME: you shouldn't just break here
-    # At least one of the lists is empty now. Copy the
-    # remainder of the other into z.
-
-        # if i == len(x):
-        #     for j in range(j, len(y)):
-        #         z.append(y[j])
-
-        # if j == len(y) and i != len(x):
-        #     for i in range(i, len(x)):
-        #         z.append(x[i])
-        
         if i == len(x):
             z.extend(y[j:len(y)])
 
@@ -51,6 +39,7 @@ def merge(x: list[int], y: list[int]) -> list[int]:
     return z
 
 # Terminates because the while loop condition must become false as we increment i/j for each step.
+# n+m are both upper, O(f), and lower, Omega(f) bound, therefore theta(f).
 
 x=[7,7,6,1,2,3]
 y=[1,2,3,8]
